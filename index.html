@@ -12,8 +12,8 @@
         <nav class="navbar">
             <a href="#inicio">Início</a>
             <a href="#loja">Loja</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
+            <a href="#modal-sobre" class="modal-trigger">Sobre</a>
+            <a href="#modal-contato" class="modal-trigger">Contato</a>
         </nav>
     </header>
 
@@ -45,19 +45,25 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- Seção Sobre -->
-        <section id="sobre" class="section">
+    <!-- Modal Sobre -->
+    <div id="modal-sobre" class="modal">
+        <div class="modal-content">
             <h1>Sobre Nós</h1>
             <p>A Olavo A é dedicada a oferecer o melhor para nossos clientes. Estamos sempre aqui para você!</p>
-        </section>
+            <a href="#" class="modal-close">Fechar</a>
+        </div>
+    </div>
 
-        <!-- Seção Contato -->
-        <section id="contato" class="section">
+    <!-- Modal Contato -->
+    <div id="modal-contato" class="modal">
+        <div class="modal-content">
             <h1>Contato</h1>
             <p>Entre em contato conosco pelo e-mail: contato@olavoa.com</p>
-        </section>
-    </main>
+            <a href="#" class="modal-close">Fechar</a>
+        </div>
+    </div>
 
     <footer class="footer">
         <p>&copy; 2024 Olavo A. Todos os direitos reservados.</p>
