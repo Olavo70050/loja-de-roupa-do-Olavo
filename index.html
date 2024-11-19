@@ -1,88 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olavo A</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olavo's</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">Olavo A</div>
-        <nav class="navbar">
-            <a href="#inicio">Início</a>
-            <a href="#loja">Loja</a>
-            <a href="#modal-sobre" class="modal-trigger">Sobre</a>
-            <a href="#modal-contato" class="modal-trigger">Contato</a>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Seção Início -->
-        <section id="inicio" class="section">
-            <h1>Bem-vindo à Olavo A</h1>
-            <p>A loja ideal para quem busca estilo e qualidade.</p>
-        </section>
-
-        <!-- Seção Loja -->
-        <section id="loja" class="section">
-            <h1>Loja</h1>
-            <div class="products">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Moletom">
-                    <h2>Moletom</h2>
-                    <p>R$ 76,40</p>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Vestido">
-                    <h2>Vestido</h2>
-                    <p>R$ 65,00</p>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Terno Masculino">
-                    <h2>Terno Masculino</h2>
-                    <p>R$ 65,00</p>
-                </div>
-                <!-- Mais três produtos -->
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Jaqueta">
-                    <h2>Jaqueta</h2>
-                    <p>R$ 120,00</p>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Calça Jeans">
-                    <h2>Calça Jeans</h2>
-                    <p>R$ 85,00</p>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Camisa Social">
-                    <h2>Camisa Social</h2>
-                    <p>R$ 99,90</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Modal Sobre -->
-    <div id="modal-sobre" class="modal">
-        <div class="modal-content">
-            <h1>Sobre Nós</h1>
-            <p>A Olavo A é dedicada a oferecer o melhor para nossos clientes. Estamos sempre aqui para você!</p>
-            <a href="#" class="modal-close">Fechar</a>
-        </div>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo Olavo's" class="logo">
+      <h1>Olavo's</h1>
     </div>
+    <nav>
+      <a href="#inicio" class="botao">Início</a>
+      <a href="#loja" class="botao">Loja</a>
+      <button class="botao" onclick="mostrarModal('sobre')">Sobre Nós</button>
+      <button class="botao" onclick="mostrarModal('contato')">Contato</button>
+    </nav>
+  </header>
 
-    <!-- Modal Contato -->
-    <div id="modal-contato" class="modal">
-        <div class="modal-content">
-            <h1>Contato</h1>
-            <p>Entre em contato conosco pelo e-mail: contato@olavoa.com</p>
-            <a href="#" class="modal-close">Fechar</a>
-        </div>
+  <main id="inicio">
+    <section>
+      <h2>Bem-vindo à Olavo's</h2>
+      <p>A loja ideal para quem busca estilo e qualidade.</p>
+    </section>
+
+    <section id="loja" class="produtos">
+      <div class="produto">
+        <p>Moletom</p>
+        <p class="preco">R$ 76,40</p>
+      </div>
+      <div class="produto">
+        <p>Vestido</p>
+        <p class="preco">R$ 65,00</p>
+      </div>
+      <div class="produto">
+        <p>Terno Masculino</p>
+        <p class="preco">R$ 65,00</p>
+      </div>
+      <div class="produto">
+        <p>Camisa Social</p>
+        <p class="preco">R$ 55,00</p>
+      </div>
+      <div class="produto">
+        <p>Jaqueta Jeans</p>
+        <p class="preco">R$ 120,00</p>
+      </div>
+      <div class="produto">
+        <p>Calça Slim</p>
+        <p class="preco">R$ 89,90</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Olavo's. Todos os direitos reservados.</p>
+    <p>Site seguro. Suporte ao cliente 24/7.</p>
+  </footer>
+
+  <!-- Modal Sobre Nós -->
+  <div id="modal-sobre" class="modal">
+    <div class="modal-conteudo">
+      <h3>Sobre Nós</h3>
+      <p>A Olavo's é dedicada a oferecer o melhor para nossos clientes. Estamos sempre aqui para você!</p>
+      <button onclick="fecharModal('sobre')">Fechar</button>
     </div>
+  </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Olavo A. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Modal Contato -->
+  <div id="modal-contato" class="modal">
+    <div class="modal-conteudo">
+      <h3>Contato</h3>
+      <p>Entre em contato conosco pelo e-mail: contato@olavos.com</p>
+      <button onclick="fecharModal('contato')">Fechar</button>
+    </div>
+  </div>
 </body>
 </html>
