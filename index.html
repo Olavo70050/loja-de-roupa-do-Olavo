@@ -15,8 +15,8 @@
     </div>
     <nav>
       <a href="#inicio" class="botao">Início</a>
-      <a href="#sobre" class="botao">Sobre Nós</a>
-      <a href="#contato" class="botao">Contato</a>
+      <button class="botao" onclick="mostrarMensagem('sobre-nos')">Sobre Nós</button>
+      <button class="botao" onclick="mostrarMensagem('contato')">Contato</button>
     </nav>
   </header>
 
@@ -30,42 +30,66 @@
     <!-- Produtos -->
     <section class="produtos">
       <div class="produto">
-        <div class="imagem-produto">150 x 150</div>
+        <div class="imagem-produto"><img src="moletom.jpg" alt="Moletom"></div>
         <p>Moletom</p>
         <p class="preco">R$ 76,40</p>
       </div>
       <div class="produto">
-        <div class="imagem-produto">150 x 150</div>
+        <div class="imagem-produto"><img src="vestido.jpg" alt="Vestido"></div>
         <p>Vestido</p>
         <p class="preco">R$ 65,00</p>
       </div>
       <div class="produto">
-        <div class="imagem-produto">150 x 150</div>
+        <div class="imagem-produto"><img src="terno.jpg" alt="Terno Masculino"></div>
         <p>Terno Masculino</p>
         <p class="preco">R$ 65,00</p>
       </div>
       <div class="produto">
-        <div class="imagem-produto">150 x 150</div>
+        <div class="imagem-produto"><img src="camisa.jpg" alt="Camisa Social"></div>
         <p>Camisa Social</p>
         <p class="preco">R$ 55,00</p>
       </div>
       <div class="produto">
-        <div class="imagem-produto">150 x 150</div>
+        <div class="imagem-produto"><img src="jaqueta.jpg" alt="Jaqueta Jeans"></div>
         <p>Jaqueta Jeans</p>
         <p class="preco">R$ 120,00</p>
       </div>
       <div class="produto">
-        <div class="imagem-produto">150 x 150</div>
+        <div class="imagem-produto"><img src="calca.jpg" alt="Calça Slim"></div>
         <p>Calça Slim</p>
         <p class="preco">R$ 89,90</p>
       </div>
     </section>
   </main>
 
+  <!-- Modais -->
+  <section id="sobre-nos" class="modal">
+    <div class="modal-content">
+      <p>A Olavo's é dedicada a oferecer o melhor para nossos clientes. Estamos sempre aqui para você!</p>
+      <button onclick="fecharMensagem('sobre-nos')">Fechar</button>
+    </div>
+  </section>
+  <section id="contato" class="modal">
+    <div class="modal-content">
+      <p>Entre em contato conosco pelo e-mail: contato@olavos.com</p>
+      <button onclick="fecharMensagem('contato')">Fechar</button>
+    </div>
+  </section>
+
   <!-- Rodapé -->
   <footer>
     <p>© 2024 Olavo's. Todos os direitos reservados.</p>
     <p>Site seguro | Frete rápido | Suporte 24/7</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function mostrarMensagem(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+    function fecharMensagem(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
 </body>
 </html>
