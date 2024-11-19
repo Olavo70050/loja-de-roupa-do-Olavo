@@ -7,89 +7,87 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="logo">Olavo A</div>
-        <nav class="navbar">
-            <a href="#inicio">Início</a>
-            <a href="#loja">Loja</a>
-            <a href="#modal-sobre" class="modal-trigger">Sobre</a>
-            <a href="#modal-contato" class="modal-trigger">Contato</a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#loja">Loja</a></li>
+                <li><a href="#sobre" onclick="document.getElementById('sobre-modal').style.display='block'">Sobre</a></li>
+                <li><a href="#contato" onclick="document.getElementById('contato-modal').style.display='block'">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- Seção Início -->
-        <section id="inicio" class="section">
-            <h1>Bem-vindo à Olavo A</h1>
-            <p>A loja ideal para quem busca estilo e qualidade.</p>
-        </section>
+    <!-- Início -->
+    <section id="inicio" class="section">
+        <h1>Bem-vindo à Olavo A</h1>
+        <p>A loja ideal para quem busca estilo e qualidade.</p>
+    </section>
 
-                <!-- Promoção -->
-        <section id="promocao" class="section">
-            <h2>Black Friday</h2>
-            <p>Aproveite descontos incríveis em toda a loja!</p>
-        </section>
-
-
-        <!-- Seção Loja -->
-        <section id="loja" class="section">
-            <h1>Loja</h1>
-            <div class="products">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Moletom">
-                    <h2>Moletom</h2>
-                    <p>R$ 76,40</p>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Vestido">
-                    <h2>Vestido</h2>
-                    <p>R$ 65,00</p>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Terno Masculino">
-                    <h2>Terno Masculino</h2>
-                    <p>R$ 65,00</p>
-                </div>
-                <!-- Mais três produtos -->
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Jaqueta">
-                    <h2>Jaqueta</h2>
-                    <p>R$ 120,00</p>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Calça Jeans">
-                    <h2>Calça Jeans</h2>
-                    <p>R$ 85,00</p>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Camisa Social">
-                    <h2>Camisa Social</h2>
-                    <p>R$ 99,90</p>
-                </div>
+    <!-- Loja -->
+    <section id="loja" class="section">
+        <h2>Loja</h2>
+        <div class="produtos">
+            <div class="produto">
+                <img src="#" alt="Produto 1" />
+                <h3>Moletom</h3>
+                <p>R$ 76,40</p>
             </div>
-        </section>
-    </main>
+            <div class="produto">
+                <img src="#" alt="Produto 2" />
+                <h3>Vestido</h3>
+                <p>R$ 65,00</p>
+            </div>
+            <div class="produto">
+                <img src="#" alt="Produto 3" />
+                <h3>Terno Masculino</h3>
+                <p>R$ 65,00</p>
+            </div>
+            <div class="produto">
+                <img src="#" alt="Produto 4" />
+                <h3>Jaqueta</h3>
+                <p>R$ 120,00</p>
+            </div>
+            <div class="produto">
+                <img src="#" alt="Produto 5" />
+                <h3>Calça Jeans</h3>
+                <p>R$ 90,00</p>
+            </div>
+            <div class="produto">
+                <img src="#" alt="Produto 6" />
+                <h3>Camisa Polo</h3>
+                <p>R$ 50,00</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Modal Sobre -->
-    <div id="modal-sobre" class="modal">
+    <!-- Modais -->
+    <div id="sobre-modal" class="modal">
         <div class="modal-content">
-            <h1>Sobre Nós</h1>
+            <span class="close" onclick="document.getElementById('sobre-modal').style.display='none'">&times;</span>
+            <h2>Sobre Nós</h2>
             <p>A Olavo A é dedicada a oferecer o melhor para nossos clientes. Estamos sempre aqui para você!</p>
-            <a href="#" class="modal-close">Fechar</a>
         </div>
     </div>
-
-    <!-- Modal Contato -->
-    <div id="modal-contato" class="modal">
+    <div id="contato-modal" class="modal">
         <div class="modal-content">
-            <h1>Contato</h1>
+            <span class="close" onclick="document.getElementById('contato-modal').style.display='none'">&times;</span>
+            <h2>Contato</h2>
             <p>Entre em contato conosco pelo e-mail: contato@olavoa.com</p>
-            <a href="#" class="modal-close">Fechar</a>
         </div>
     </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Olavo A. Todos os direitos reservados.</p>
+    <!-- Mensagens de Confiança -->
+    <section id="confianca" class="section">
+        <div class="conf-item">🔒 Site Seguro</div>
+        <div class="conf-item">💳 Pagamento Protegido</div>
+        <div class="conf-item">🚚 Entrega Rápida</div>
+        <div class="conf-item">📞 Suporte 24/7</div>
+    </section>
+
+    <footer>
+        <p>© 2024 Olavo A. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
