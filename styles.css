@@ -133,3 +133,21 @@ body {
     background-color: #333;
     color: #fff;
 }
+
+/* Promoção */
+#promocao {
+    background: #ff5733;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: -20px; /* Ajuste para evitar espaço extra */
+}
+
+#promocao h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#promocao p {
+    font-size: 1.2rem;
+}
