@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Cabeçalho -->
   <header>
     <div class="logo-container">
       <img src="logo.png" alt="Logo Olavo's" class="logo">
@@ -14,67 +15,57 @@
     </div>
     <nav>
       <a href="#inicio" class="botao">Início</a>
-      <a href="#loja" class="botao">Loja</a>
-      <button class="botao" onclick="mostrarModal('sobre')">Sobre Nós</button>
-      <button class="botao" onclick="mostrarModal('contato')">Contato</button>
+      <a href="#sobre" class="botao">Sobre Nós</a>
+      <a href="#contato" class="botao">Contato</a>
     </nav>
   </header>
 
+  <!-- Mensagem inicial -->
   <main id="inicio">
-    <section>
+    <section class="mensagem">
       <h2>Bem-vindo à Olavo's</h2>
-      <p>A loja ideal para quem busca estilo e qualidade.</p>
+      <p>Estilo, qualidade e conforto em um só lugar. Escolha o melhor para você!</p>
     </section>
 
-    <section id="loja" class="produtos">
+    <!-- Produtos -->
+    <section class="produtos">
       <div class="produto">
+        <div class="imagem-produto">150 x 150</div>
         <p>Moletom</p>
         <p class="preco">R$ 76,40</p>
       </div>
       <div class="produto">
+        <div class="imagem-produto">150 x 150</div>
         <p>Vestido</p>
         <p class="preco">R$ 65,00</p>
       </div>
       <div class="produto">
+        <div class="imagem-produto">150 x 150</div>
         <p>Terno Masculino</p>
         <p class="preco">R$ 65,00</p>
       </div>
       <div class="produto">
+        <div class="imagem-produto">150 x 150</div>
         <p>Camisa Social</p>
         <p class="preco">R$ 55,00</p>
       </div>
       <div class="produto">
+        <div class="imagem-produto">150 x 150</div>
         <p>Jaqueta Jeans</p>
         <p class="preco">R$ 120,00</p>
       </div>
       <div class="produto">
+        <div class="imagem-produto">150 x 150</div>
         <p>Calça Slim</p>
         <p class="preco">R$ 89,90</p>
       </div>
     </section>
   </main>
 
+  <!-- Rodapé -->
   <footer>
     <p>© 2024 Olavo's. Todos os direitos reservados.</p>
-    <p>Site seguro. Suporte ao cliente 24/7.</p>
+    <p>Site seguro | Frete rápido | Suporte 24/7</p>
   </footer>
-
-  <!-- Modal Sobre Nós -->
-  <div id="modal-sobre" class="modal">
-    <div class="modal-conteudo">
-      <h3>Sobre Nós</h3>
-      <p>A Olavo's é dedicada a oferecer o melhor para nossos clientes. Estamos sempre aqui para você!</p>
-      <button onclick="fecharModal('sobre')">Fechar</button>
-    </div>
-  </div>
-
-  <!-- Modal Contato -->
-  <div id="modal-contato" class="modal">
-    <div class="modal-conteudo">
-      <h3>Contato</h3>
-      <p>Entre em contato conosco pelo e-mail: contato@olavos.com</p>
-      <button onclick="fecharModal('contato')">Fechar</button>
-    </div>
-  </div>
 </body>
 </html>
